@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <link rel="title icon" href="Image/logo.png" type="image/png" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="StyleSheet/animate.min.css" />
+    <link rel="stylesheet" href="StyleSheet/swiper.min.css" />
+    <link rel="stylesheet" href="StyleSheet/owl.carousel.min.css" />
+    <!-- <link rel="stylesheet" href="StyleSheet/owl.theme.green.min.css" /> -->
+    <link rel="stylesheet" href="StyleSheet/main.css" type="text/css" />
+    <title>Making housing easier</title>
+  </head>
+  <main id="swup" class="transition-fade">
+    <body>
+      <!-- Logo & Menu -->
+      <div class="logo">
+        <a href="#"><img src="Image/logo2.png" alt="Home" /></a>
+      </div>
+      <div class="menu" id="menuBtn" onclick="sideFunction()">
+        <div class="stroke" id="strok2"></div>
+        <div class="stroke" id="strok"></div>
+        <div class="stroke"></div>
+      </div>
+      <ul class="sidebar" id="sidebarBtn">
+        <!-- <li onmouseover="iconFa()" onmouseout="iconFa1()"> -->
+        <li class="side">
+          <a href="#About">
+            <span><i class="fas fa-users fa-2x one"></i></span>
+            <br />
+            <span class="text-white">About</span>
+          </a>
+        </li>
+        <li class="side">
+          <a href="#propert">
+            <span><i class="fas fa-building fa-2x one"></i></span>
+            <br />
+            <span class="text-white">Property</span>
+          </a>
+        </li>
+        <li class="side">
+          <a href="#customeR">
+            <span><i class="fa fa-star fa-2x one"></i></span>
+            <br />
+            <span class="text-white">Customer</span>
+          </a>
+        </li>
+        <li class="side">
+          <a href="#partNer">
+            <span><i class="fa fa-handshake fa-2x one"></i></span>
+            <br />
+            <span class="text-white">Partner</span>
+          </a>
+        </li>
+        <li class="side">
+          <a href="#footeR">
+            <span><i class="fa fa-envelope fa-2x one"></i></span>
+            <br />
+            <span class="text-white">Contact</span>
+          </a>
+        </li>
+      </ul>
+      <!-- end of Logo & Menu -->
+
+      <!-- Banner -->
+      <!-- <div class="row"></div> -->
+      <div class="fixed">
+        <div class="row bannerPic justify-content-center align-items-center">
+          <video
+            class="videoBg"
+            poster="Image/apartment.jpg"
+            autoplay
+            muted
+            loop
+          >
+            <source src="Video/DreamBg.mp4" type="video/mp4" />
+          </video>
+          <div class="bannerHead">
+            <img src="Image/Dream City Branding.png" alt="#" />
+            <p><i>making housing easier...</i></p>
+            <div class="text-center">
+              <i
+                class="mt-4 fa fa-angle-down fa-3x animate__animated animate__slideInDown animate__infinite"
+                style="
+                  color: rgb(0, 0, 0);
+                  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                "
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end of Banner -->
+
+      <!-- About -->
+      <section id="About">
+        <div class="offer text-center">
+          <p class="text-white">we offer</p>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 offer1" style="overflow: hidden">
+              <div class="casee text-center wow animate__flipInX">
+                <div class="wow animate__bounce animate__delay-1s">
+                  <i class="fa fa-thumbs-up fa-8x text-white"></i>
+                </div>
+                <p class="mt-4 wow animate__fadeIn animate__delay-1s">
+                  quality
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 offer2" style="overflow: hidden">
+              <div class="caseeText wow animate__backInLeft animate__delay-1s">
+                <p>
+                  We provide housing of high quality, which makes you and your
+                  guest feel at ease,
+                  <em>"Since there is no place like home"</em>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 offer2" style="overflow: hidden">
+              <div class="caseeText wow animate__backInLeft animate__delay-1s">
+                <p>
+                  Have no fear regarding the efficiency of our asset and we make
+                  sure it has a core feature to last much longer,
+                  <em>"And that is:"</em>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 offer1" style="overflow: hidden">
+              <div
+                class="casee text-center wow animate__flipInX animate__delay-1s"
+              >
+                <div class="wow animate__bounce animate__delay-2s">
+                  <i class="fa fa-cogs fa-8x text-white"></i>
+                </div>
+                <p class="mt-4 wow animate__fadeIn animate__delay-2s">
+                  Durability
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 offer1" style="overflow: hidden">
+              <div class="casee text-center wow animate__flipInX">
+                <div class="wow animate__bounce animate__delay-1s">
+                  <i class="fa fa-credit-card fa-8x text-white"></i>
+                </div>
+                <p class="mt-4 wow animate__fadeIn animate__delay-1s">
+                  affordability
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 offer2" style="overflow: hidden">
+              <div class="caseeText wow animate__backInLeft animate__delay-2s">
+                <p>
+                  With all the Great Housing feature we offer, the most amazing
+                  of it all is <em>"the price is incredibly economical"</em>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of About -->
+
+      <!-- Apartment -->
+
+      <section class="partment" id="propert">
+        <div class="offer text-center">
+          <p class="text-white">Properties</p>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 my-1 p-4">
+              <div class="carded">
+                <a href="#apartmentModal" data-toggle="modal">
+                  <img src="Image/Mini.jpg" alt="Avatar" style="width: 100%" />
+                  <div class="containee text-right">
+                    <h4 style="color: rgb(94, 118, 224)">
+                      <b>Dream Mini</b>
+                    </h4>
+                    <p style="color: rgb(99, 206, 108)">
+                      <b>Brooklyn, NY</b>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-1 p-4">
+              <div class="carded">
+                <a href="#apartmentModal2" data-toggle="modal">
+                  <img
+                    src="Image/luxury.jpg"
+                    alt="Avatar"
+                    style="width: 100%"
+                  />
+                  <div class="containee text-right">
+                    <h4 style="color: rgb(94, 118, 224)">
+                      <b>Dream Luxury</b>
+                    </h4>
+                    <p style="color: rgb(99, 206, 108)">
+                      <b>Lagos, NG</b>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-1 p-4">
+              <div class="carded">
+                <a href="#apartmentModal" data-toggle="modal">
+                  <img src="Image/eco.jpg" alt="Avatar" style="width: 100%" />
+                  <div class="containee text-right">
+                    <h4 style="color: rgb(94, 118, 224)">
+                      <b>Dream Eco</b>
+                    </h4>
+                    <p style="color: rgb(99, 206, 108)">
+                      <b>Ibadan, NG</b>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-1 p-4">
+              <div class="carded">
+                <a href="#apartmentModal2" data-toggle="modal">
+                  <img
+                    src="Image/faxtic.jpg"
+                    alt="Avatar"
+                    style="width: 100%"
+                  />
+                  <div class="containee text-right">
+                    <h4 style="color: rgb(94, 118, 224)">
+                      <b>Dream Executive</b>
+                    </h4>
+                    <p style="color: rgb(99, 206, 108)">
+                      <b>Oslo, NW</b>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-1 p-4">
+              <div class="carded">
+                <a href="#apartmentModal" data-toggle="modal">
+                  <img src="Image/Warmy.jpg" alt="Avatar" style="width: 100%" />
+                  <div class="containee text-right">
+                    <h4 style="color: rgb(94, 118, 224)">
+                      <b>Dream Warmy</b>
+                    </h4>
+                    <p style="color: rgb(99, 206, 108)">
+                      <b>Tokyo, JP</b>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-1 p-4">
+              <div class="carded">
+                <a href="#apartmentModal2" data-toggle="modal">
+                  <img
+                    src="Image/Modern.jpg"
+                    alt="Avatar"
+                    style="width: 100%"
+                  />
+                  <div class="containee text-right">
+                    <h4 style="color: rgb(94, 118, 224)">
+                      <b>Dream Modern</b>
+                    </h4>
+                    <p style="color: rgb(99, 206, 108)">
+                      <b>Somewhere, IL</b>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-1 p-4">
+              <div class="carded">
+                <a href="#apartmentModal" data-toggle="modal">
+                  <img
+                    src="Image/Skyview.jpg"
+                    alt="Avatar"
+                    style="width: 100%"
+                  />
+                  <div class="containee text-right">
+                    <h4 style="color: rgb(94, 118, 224)">
+                      <b>Dream Skyview</b>
+                    </h4>
+                    <p style="color: rgb(99, 206, 108)">
+                      <b>Dubai, UAE</b>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-1 p-4">
+              <div class="carded">
+                <a href="#apartmentModal2" data-toggle="modal">
+                  <img src="Image/big.jpg" alt="Avatar" style="width: 100%" />
+                  <div class="containee text-right">
+                    <h4 style="color: rgb(94, 118, 224)">
+                      <b>Dream Big</b>
+                    </h4>
+                    <p style="color: rgb(99, 206, 108)">
+                      <b>San Sato, UW</b>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-1 p-4">
+              <div class="carded">
+                <a href="#apartmentModal" data-toggle="modal">
+                  <img src="Image/green.jpg" alt="Avatar" style="width: 100%" />
+                  <div class="containee text-right">
+                    <h4 style="color: rgb(94, 118, 224)">
+                      <b>Dream Green</b>
+                    </h4>
+                    <p style="color: rgb(99, 206, 108)">
+                      <b>Greenwood, NE</b>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="property.html" style="text-decoration: none"
+            ><button class="btn btnCustom px-4">Show More</button></a
+          >
+          <br />
+        </div>
+
+        <div class="overlay transition-wipe"></div>
+      </section>
+
+      <!-- end of Apartment -->
+      <!-- Customer -->
+      <section id="customeR">
+        <div class="customer text-center">
+          <p class="text-white customer-title">Client Review</p>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="carded2 bg-white mx-auto p-1">
+                  <div class="infor mt-4 mb-1">
+                    <div class="cusPix">
+                      <img
+                        src="Image/1.jpg"
+                        alt="#"
+                        style="width: 100%; object-fit: cover"
+                      />
+                    </div>
+
+                    <div class="ml-md-4">
+                      <h4 style="color: rgb(94, 118, 224)">
+                        AbdWasiu Ibn Salis
+                      </h4>
+                      <p style="color: rgb(99, 206, 108)">
+                        <i class="fa fa-map-marker mr-1"></i>Medina
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <p>
+                      "I'm happy with the home deal I got from DreamCiti. I've
+                      always wanted a beautiful modern house, then DreamCiti was
+                      recommended to me. Lo and behold, i was amazed at their
+                      affordable homes and customer treatment."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carded2 bg-white mx-auto p-1">
+                  <div class="infor mt-4 mb-1">
+                    <div class="cusPix">
+                      <img
+                        src="Image/2.jpg"
+                        alt="#"
+                        style="width: 100%; object-fit: cover"
+                      />
+                    </div>
+
+                    <div class="ml-md-4">
+                      <h4 style="color: rgb(94, 118, 224)">Ryan Wood</h4>
+                      <p style="color: rgb(99, 206, 108)">
+                        <i class="fa fa-map-marker mr-1"></i>Sydney
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <p>
+                      "Keep up the excellent work. Dreamciti has got everything
+                      I need. Not able to tell you how happy I am with
+                      dreamciti. It's really wonderful."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carded2 bg-white mx-auto p-1">
+                  <div class="infor mt-4 mb-1">
+                    <div class="cusPix">
+                      <img
+                        src="Image/3.jpg"
+                        alt="#"
+                        style="width: 100%; object-fit: cover"
+                      />
+                    </div>
+
+                    <div class="ml-md-4">
+                      <h4 style="color: rgb(94, 118, 224)">Jake West</h4>
+                      <p style="color: rgb(99, 206, 108)">
+                        <i class="fa fa-map-marker mr-1"></i>Manchester
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <p>
+                      "Dreamciti is worth much more than I paid. We've seen
+                      amazing results already."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carded2 bg-white mx-auto p-1">
+                  <div class="infor mt-4 mb-1">
+                    <div class="cusPix">
+                      <img
+                        src="Image/4.jpg"
+                        alt="#"
+                        style="width: 100%; object-fit: cover"
+                      />
+                    </div>
+
+                    <div class="ml-md-4">
+                      <h4 style="color: rgb(94, 118, 224)">Bella Zoe</h4>
+                      <p style="color: rgb(99, 206, 108)">
+                        <i class="fa fa-map-marker mr-1"></i>Norway
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <p>
+                      "It really saves us time and effort. dreamciti housing is
+                      exactly what we've been looking for. Dreamciti has
+                      completely surpassed our expectations..."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carded2 bg-white mx-auto p-1">
+                  <div class="infor mt-4 mb-1">
+                    <div class="cusPix">
+                      <img
+                        src="Image/5.jpg"
+                        alt="#"
+                        style="width: 100%; object-fit: cover"
+                      />
+                    </div>
+
+                    <div class="ml-md-4">
+                      <h4 style="color: rgb(94, 118, 224)">Idris Khan</h4>
+                      <p style="color: rgb(99, 206, 108)">
+                        <i class="fa fa-map-marker mr-1"></i>Dubai
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <p>
+                      "Dreamciti has got everything I need. Thanks dreamciti! I
+                      will let my friend know about this, they could really make
+                      use of dreamciti! I have gotten at least 50 times the
+                      valued property from dreamciti"
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carded2 bg-white mx-auto p-1">
+                  <div class="infor mt-4 mb-1">
+                    <div class="cusPix">
+                      <img
+                        src="Image/6.jpg"
+                        alt="#"
+                        style="width: 100%; object-fit: cover"
+                      />
+                    </div>
+
+                    <div class="ml-md-4">
+                      <h4 style="color: rgb(94, 118, 224)">Pearl Robin</h4>
+                      <p style="color: rgb(99, 206, 108)">
+                        <i class="fa fa-map-marker mr-1"></i>New Jersey
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <p>
+                      "Wow what great service, I love it! I will recommend you
+                      to my colleagues. We can't understand how we've been
+                      living without good housing system"
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of Customer -->
+      <!-- Partner -->
+      <section id="partNer">
+        <h1
+          class="text-center text-white py-2"
+          style="
+            background-color: rgb(99, 206, 108);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+          "
+        >
+          Partners
+        </h1>
+        <div class="partnerLogo">
+          <img src="Image/3Path.png" alt="#" class="m-3" />
+          <img src="Image/Auda.png" alt="#" class="m-3" />
+          <img src="Image/dropUnion.png" alt="#" class="m-3" />
+          <img src="Image/viceRoy.png" alt="#" class="m-3" />
+          <img src="Image/Homex.png" alt="#" class="m-3" />
+          <img src="Image/Qasis.png" alt="#" class="m-3" />
+          <img src="Image/top.png" alt="#" class="m-3" />
+        </div>
+      </section>
+
+      <!-- end of Partner -->
+
+      <!-- Footer -->
+      <footer style="background-color: black" class="p-4" id="footeR">
+        <div class="row">
+          <div class="contacte col-lg-3">
+            <h4>Contact Us</h4>
+            <div>
+              <i
+                class="fas fa-home mr-2 mt-1"
+                style="color: rgb(94, 118, 224)"
+              ></i>
+              <p>
+                <span
+                  style="
+                    font-weight: bold;
+                    text-decoration: underline;
+                    font-size: 18px;
+                  "
+                  >HeadQuarter</span
+                ><br />
+                17 Allen Way, across Skye Airway, Brockflyn, Ogun State Nigeria.
+                <br />
+                <br />
+                <span
+                  style="
+                    font-weight: bold;
+                    text-decoration: underline;
+                    font-size: 18px;
+                  "
+                  >Other Office</span
+                ><br />
+                07 Wall Path, across Fantabulous Mall, Lekki, Lagos State
+                Nigeria.
+              </p>
+            </div>
+            <div>
+              <i
+                class="fas fa-phone mr-2 mt-1"
+                style="color: rgb(94, 118, 224)"
+              ></i>
+              <p>+234(0)816-182-1845, +111-234-567.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 emailer">
+            <h4>Stay Connected</h4>
+            <form class="mb-3">
+              <div class="input-group">
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  class="form-control"
+                />
+                <div class="input-group-append">
+                  <button
+                    type="button"
+                    class="btn text-uppercase font-weight-bold text-white"
+                    style="background-color: rgb(94, 118, 224)"
+                  >
+                    Sign Up
+                  </button>
+                </div>
+              </div>
+            </form>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <i class="fab fa-facebook-square fa-2x text-primary"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-twitter fa-2x text-primary"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-instagram fa-2x text-danger"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 Neede">
+            <h4>Need Help?</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">Customer Service</a>
+              </li>
+              <li>
+                <a href="#">Online Chat</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+              <li>
+                <a href="#" style="color: rgb(94, 118, 224)"
+                  >mail@dreamciti.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 helpe">
+            <h4>What are you waiting for?</h4>
+            <p>
+              DreamCiti offer the best according to your wierdest imagination
+              and be rest assured about you, your family and property safety. We
+              love and are here to serve you better as to ur desire. Do business
+              with us and be amazed.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-right">
+            <p class="text-white border-top">
+              &copy; Abdul 2020, All Right Reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- end of Footer -->
+
+      <!-- modal -->
+      <div id="apartmentModal" class="modal fade zoom-in">
+        <div class="modal-dialog modal-dialogy modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <div class="modal-body p-0">
+              <button
+                type="button"
+                class="close text-white modalX"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <div class="owl-carousel owl-theme owl-loaded">
+                <div class="owl-stage-outer">
+                  <div class="owl-stage">
+                    <img
+                      src="Image/slider1.jpg"
+                      class="owl-item"
+                      alt="slider"
+                    />
+                    <img
+                      src="Image/slider2.jpg"
+                      class="owl-item"
+                      alt="slider"
+                    />
+                    <img
+                      src="Image/slider3.jpg"
+                      class="owl-item"
+                      alt="slider"
+                    />
+                    <img
+                      src="Image/slider4.jpg"
+                      class="owl-item"
+                      alt="slider"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- modal content -->
+            </div>
+            <a href="tel:+2348161821845" style="text-decoration: none">
+              <div class="modal-footer text-center p-3 d-block overDiv">
+                <i
+                  class="fas fa-phone fa-2x mr-2 mt-1"
+                  style="color: rgb(255, 255, 255)"
+                ></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="apartmentModal2" class="modal fade zoom-in">
+        <div class="modal-dialog modal-dialogy modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <div class="modal-body p-0">
+              <button
+                type="button"
+                class="close text-white modalX"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <div class="owl-carousel owl-theme owl-loaded">
+                <div class="owl-stage-outer">
+                  <div class="owl-stage">
+                    <img
+                      src="Image/slider5.jpg"
+                      class="owl-item"
+                      alt="slider"
+                    />
+                    <img
+                      src="Image/slider6.jpg"
+                      class="owl-item"
+                      alt="slider"
+                    />
+                    <img
+                      src="Image/slider7.jpg"
+                      class="owl-item"
+                      alt="slider"
+                    />
+                    <img
+                      src="Image/slider8.jpg"
+                      class="owl-item"
+                      alt="slider"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- modal content -->
+            </div>
+            <a href="tel:+2348161821845" style="text-decoration: none">
+              <div class="modal-footer text-center p-3 d-block overDiv">
+                <i
+                  class="fas fa-phone fa-2x mr-2 mt-1"
+                  style="color: rgb(255, 255, 255)"
+                ></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- end of modal -->
+
+      <!-- Script -->
+      <script defer src="fontawesome-free-5.9.0-web/js/all.js"></script>
+      <script src="Scripts/jquery-3.4.1.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+      ></script>
+      <script src="Scripts/popper.min.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+      <script src="Scripts/wow.min.js"></script>
+      <script src="Scripts/owl.carousel.min.js"></script>
+      <script>
+        var wow = new WOW({
+          boxClass: "wow",
+          animateClass: "animate__animated",
+          offset: 0,
+          mobile: true,
+          live: true,
+          callback: function (box) {},
+          scrollContainer: null,
+          resetAnimation: true,
+        });
+
+        wow.init();
+      </script>
+      <script src="Scripts/swiper.min.js"></script>
+      <script>
+        var swiper = new Swiper(".swiper-container", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 30,
+            stretch: 0,
+            depth: 500,
+            modifier: 1,
+            slideShadows: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+
+        $(document).ready(function () {
+          $(".owl-carousel").owlCarousel({
+            items: 1,
+            autoplay: true,
+            dots: false,
+            nav: false,
+            mouseDrag: true,
+            touchDrag: true,
+            smartSpeed: 1000,
+            autoplayTimeout: 3500,
+            loop: true,
+          });
+        });
+      </script>
+
+      <script src="Scripts/main.js"></script>
+      <!-- end of Script -->
+    </body>
+  </main>
+</html>

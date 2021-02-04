@@ -1,0 +1,525 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  position: fixed;
+  z-index: 3;
+  top: 30px;
+  left: 30px;
+}
+.menu {
+  position: fixed;
+  z-index: 3;
+  top: 30px;
+  right: 30px;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
+  padding: 5px;
+
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: pointer;
+}
+.menuRotate {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.menu .stroke {
+  background-color: rgb(99, 206, 108);
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.menu .stroke2 {
+  width: 15px;
+}
+.menu .stroke3 {
+  width: 8px;
+}
+
+.logo img {
+  background-color: black;
+  border-radius: 7px;
+  width: 40px;
+  height: auto;
+  padding: 2px;
+}
+
+.bannerPic {
+  /* background: url(/Image/apartment.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;*/
+  height: 100vh;
+
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.bannerPic .videoBg {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.bannerPic .bannerHead img {
+  background-color: #000000b6;
+  width: auto;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+.bannerPic .bannerHead p {
+  background-color: rgba(99, 206, 108, 0.692);
+  padding: 5px;
+  border-radius: 0 0 3px 3px;
+  color: #ffffff;
+  text-align: right;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+/* .bannerPic .bannerHead div  {
+  background-color: rgb(94, 118, 224);
+  padding: 5px;
+  border-radius: 50%;
+} */
+
+.sidebar {
+  position: fixed;
+  z-index: 7;
+  right: -100px;
+  top: 25%;
+  background-color: rgb(99, 206, 108, 0.6);
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1s;
+  -moz-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.sidebar li a {
+  text-decoration: none;
+}
+
+.sidebar li {
+  display: block;
+  list-style: none;
+  padding-right: 10px;
+  padding: 7px;
+  text-align: center;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.sidebar li span .fa-2x {
+  color: rgb(44, 74, 99);
+}
+/* .sidebar li span .fa-2x:hover {
+  color: white;
+} */
+.sidebar li span .one {
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+.sidebar li:hover {
+  background-color: rgb(94, 118, 224);
+  color: black;
+}
+.sidebar li:first-child:hover {
+  border-radius: 10px 0 0 0;
+}
+.sidebar li:last-child:hover {
+  border-radius: 0 0 0 10px;
+}
+
+.sidebarSlideIn {
+  right: 0;
+}
+
+/* About */
+.offer {
+  background: rgba(0, 0, 0, 0.9);
+  height: 50px;
+}
+.offer p {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+.offer1 {
+  background: rgb(94, 118, 224);
+  padding: 40px 0;
+}
+.casee {
+  border: 3px #ffffff solid;
+  border-radius: 5px;
+  width: 300px;
+  height: 270px;
+  margin: auto;
+  padding: 20px;
+}
+
+.casee p {
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.offer2 {
+  background: rgb(99, 206, 108);
+  padding: 40px 0;
+}
+
+.caseeText {
+  border: 3px #ffffff solid;
+  border-radius: 5px;
+  width: 300px;
+  height: 270px;
+  margin: auto;
+  padding: 20px;
+}
+
+.caseeText p {
+  color: #ffffff;
+  font-size: 24px;
+}
+.caseeText p em {
+  text-transform: capitalize;
+}
+/* end of About */
+
+/* Properties */
+.partment {
+  background-color: rgba(94, 118, 224, 0.281);
+}
+
+.carded {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: auto;
+  min-width: 250px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.carded:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  -ms-transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+}
+.carded a {
+  text-decoration: none;
+  color: black;
+}
+.carded img {
+  border-radius: 5px 5px 0 0;
+}
+
+/* Add some padding inside the card container */
+.containee {
+  padding: 2px 16px;
+}
+
+div .btnCustom {
+  display: block;
+  margin: auto;
+
+  background-color: rgb(94, 118, 224);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+div .btnCustom:hover {
+  color: #ffffff;
+  background-color: rgb(99, 206, 108);
+}
+
+/* end of Properties */
+
+/* Customer */
+.customer {
+  background: rgb(0, 0, 0);
+  padding: 7px;
+}
+.customer .customer-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+.carded2 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(94, 118, 224, 0.411);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  /* width: 320px;
+  height: 280px; */
+  /* width: auto; */
+  width: auto;
+  max-width: 350px;
+  height: auto;
+  max-height: 300px;
+  background-color: #ffffff;
+  border-radius: 15px 0 15px 0;
+  border: solid rgb(94, 118, 224) 2px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.carded2:hover {
+  box-shadow: 0 8px 16px 0 rgba(94, 118, 224, 0.616);
+}
+.infor {
+  display: flex;
+  justify-content: start;
+}
+.infor .cusPix {
+  position: relative;
+  min-width: 30px;
+  max-width: 60px;
+  min-height: auto;
+  max-height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgb(94, 118, 224);
+  margin-left: 25px;
+}
+.infor .cusPix img {
+  display: block;
+  object-fit: cover;
+  margin: auto;
+  width: 60px;
+  height: auto;
+}
+
+/* end of Customer */
+
+/* Partner */
+.partnerLogo {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-around;
+}
+.partnerLogo img {
+  width: auto;
+  height: 100px;
+}
+
+/* end of Partner */
+
+/* Footer */
+.contacte h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.contacte div {
+  display: flex;
+  color: #ffffff;
+}
+.emailer h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.Neede h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.Neede ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.Neede ul li a:hover {
+  color: rgb(94, 118, 224);
+}
+.helpe h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.helpe p {
+  color: #ffffff;
+}
+/* end of Footer */
+
+/* Property page */
+.swiper-slide {
+  max-width: 440px;
+  min-width: 250px;
+  height: auto;
+}
+/* Property page */
+
+/* modal */
+.modalX {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font-size: 50px;
+  z-index: 12;
+  color: #ff7575 !important;
+}
+.modal .modal-dialogy {
+  overflow: hidden;
+}
+/* .swiper-container2 {
+  width: 100%;
+  height: 100%;
+} */
+.zoom-in {
+  -ms-transform: scale(0.7) !important;
+  -moz-transform: scale(0.7) !important;
+  -o-transform: scale(0.7) !important;
+  -webkit-transform: scale(0.7) !important;
+  transform: scale(0.7) !important;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  /* display: block !important; */
+}
+
+.zoom-in.show {
+  opacity: 1;
+  -ms-transform: scale(0.7) !important;
+  -ms-transform: none;
+  -moz-transform: scale(0.7) !important;
+  -moz-transform: none;
+  -o-transform: scale(0.7) !important;
+  -o-transform: none;
+  -webkit-transform: scale(0.7) !important;
+  -webkit-transform: none;
+  transform: scale(1) !important;
+  transform: none;
+}
+.overDiv {
+  background-color: #000000;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.overDiv:hover {
+  background-color: #37af3d;
+}
+
+/* end of modal */
+
+/* Page Transition */
+.overlay {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgb(99, 206, 108);
+  color: rgb(99, 206, 108);
+  left: 0;
+  top: 0;
+  transform: scale(0);
+  transform-origin: left;
+}
+/* html.is-animating .overlay {
+  transform: scaleX(1);
+} */
+/* .transition-fade {
+  transition: all 0.4s;
+  opacity: 1;
+}
+html.is-animating .transition-fade {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+.transition-wipe {
+  transition: 0.7s cubic-bezier(0, 0, 0.58, 1);
+  transform: scaleX(0);
+}
+html.is-animating .transition-wipe {
+  transform: scaleX(1);
+} */
+/* end of Page Transition */
+
+@media (min-width: 550px) {
+  #menuBtn {
+    display: none;
+  }
+  .sidebar {
+    right: 0;
+  }
+  /* properties */
+  .carded {
+    width: auto;
+  }
+  /* end of properties */
+}
+@media (max-width: 550px) {
+  /* banner */
+  .bannerPic .bannerHead img {
+    height: 75px;
+  }
+  /* end of banner */
+  /* properties */
+  .carded {
+    width: auto;
+  }
+  /* end of properties */
+}
+@media (min-width: 1050px) {
+  /* properties */
+  .carded {
+    width: auto;
+  }
+  /* end of properties */
+}
+@media (max-width: 320px) {
+  .infor {
+    display: block;
+    text-align: center;
+  }
+  .infor .cusPix {
+    margin: auto;
+    margin-bottom: 12px;
+  }
+}
